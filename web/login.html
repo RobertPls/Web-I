@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ingreso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <div id="content">
+        <header class="header">
+            <h1 class="header__logo">VIDEOPLAY</h1>
+        </header>
+        <div class="banner__contenedor">
+            <section class="banner">
+                <h2 class="banner__title">Películas y series ilimitadas y mucho más.
+                    Disfruta donde quieras.</h2>
+                <form  id="banner__form-login">
+                    <h2 class="form-login__title">Ingreso</h2>
+                    <input id="user" type="text" placeholder="Código de Usuario">
+                    <input id="password" type="password" placeholder="Constraseña">
+                    <div class="invalid-feedback mb-3" id="validation-username">
+                        Debe ingresar su nombre de usuario
+                    </div>
+                    <div class="invalid-feedback mb-3" id="validation-password">
+                        Debe ingresar su contraseña
+                    </div>
+                    <div  id="msg-error-login"  role="alert"></div>
+                    <input id="btn-login" type="submit" value="Entrar">
+                    <a href="signup.html">Registrarse</a>
+                </form>
+                <script src="js/login.js"></script>
+            </section>
+        </div>
+        <main>
+            <div class="main">
+                <section class="info">
+                    <div class="info__contenedor">
+                        <h2 class="info__title">Disfruta en tu TV. <span>Ve en smart TV, PlayStation, Xbox, Chromecast,
+                                Apple TV, reproductores de Blu-ray y
+                                más.</span></h2>
+                        <div class="info__img">
+                            <img src="img/info.png" alt="Informacion">
+                        </div>
+                    </div>
+                </section>
+                <section class="preguntas">
+                    <h2 class="preguntas__title">Preguntas frecuentes</h2>
+                    <ul class="preguntas__lista">
+                        <li class="preguntas__lista__item">
+                            <label for="1-switch" class="preguntas__label">
+                                ¿Qué es VideoPlay?
+                            </label>
+                            <input type="checkbox" id="1-switch" class="preguntas__switch">
+                            <div class="preguntas__content">
+                                <p>VideoPlay es un servicio de streaming que ofrece una gran variedad de películas,
+                                    y series premiados en casi cualquier pantalla conectada a internet.
+                                    Todo lo que quieras ver, sin límites ni comerciales, de manera gratis.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="preguntas__lista__item">
+                            <label for="3-switch" class="preguntas__label">
+                                ¿Dónde puedo ver VideoPlay?
+                            </label>
+                            <input type="checkbox" id="3-switch" class="preguntas__switch">
+                            <div class="preguntas__content">
+                                <p>
+                                    Ve donde quieras, cuando quieras y en todos los dispositivos que quieras. Inicia
+                                    sesión
+                                    en tu cuenta de VideoPlay para ver contenido al instante a través de VideoPlay.com
+                                    desde
+                                    tu
+                                    computadora personal o en cualquier dispositivo con conexión a internet.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="preguntas__lista__item">
+                            <label for="5-switch" class="preguntas__label">
+                                ¿Qué puedo ver en VideoPlay?
+                            </label>
+                            <input type="checkbox" id="5-switch" class="preguntas__switch">
+                            <div class="preguntas__content">
+                                <p>
+                                    VideoPlay tiene un amplio catálogo de películas y series muy amplio.
+                                    Todo lo que quieras ver, cuando quieras.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <footer class="footer">
+                    <span>VIDEOPLAY</span>
+                    <span>© 2020</span>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

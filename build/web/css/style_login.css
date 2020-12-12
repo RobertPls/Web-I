@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+
+body{
+margin: 0px auto;
+}
+
+@media (min-width: 1000px){
+    #content{
+        width: 1000;
+    }
+}

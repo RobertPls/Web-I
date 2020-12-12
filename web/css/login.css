@@ -1,0 +1,216 @@
+html, body {
+    height: 100%;
+}
+
+.header {
+    background-image: url("img/header_background.jpg");
+    background-repeat: repeat;
+    font-family: Ubuntu, sans-serif;
+}
+
+
+.header__logo {
+    margin: -18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    color: #2095F2;
+    text-align: center;
+}
+
+.banner__contenedor {
+    height: 600px;
+    background-image: url('img/background.png');
+    background-size: 100%;
+}
+
+.banner__title {
+    background-color: black;
+    filter: opacity(90%);
+    border-radius: 5px;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: 15%;
+    top: 100px;
+    width: 70%;
+}
+
+.form-login__title {
+    font-size: 30px;
+    color: white;
+}
+
+#banner__form-login {
+    background-color: black;
+    text-align: center;
+    padding: 20px 35px;
+    position: absolute;
+    width: 100%;
+    height: 330px;
+    top: 350px;
+    filter: opacity(90%);
+}
+
+#banner__form-login input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+
+#banner__form-login input[type='submit'] {
+    margin-top: 5px;
+    background-color: #2095F2;
+    color: white;
+    cursor: pointer;
+}
+
+#validation-username{
+    display: none;
+    color: white;
+}
+#validation-password{
+    display: none;
+    color: white;
+}
+
+#msg-error-login{
+    color: white;
+    display: none;
+}
+
+a, a:visited {
+    color: #2095F2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    background-color: rgb(30, 30, 30);
+    padding-top: 30px;
+}
+
+.main section {
+    margin: 0px 0px 30px 0px;
+    background-color: black;
+    color: white;
+}
+.info {
+    padding: 50px;
+}
+.info__title {
+    text-align: center;
+    display: block;
+    margin: 0px;
+}
+
+.info__title span {
+    display: block;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.info__img {
+    width: 100%;
+}
+
+.preguntas__title {
+    margin: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.preguntas .preguntas__lista .preguntas__lista__item label:hover {
+    cursor: pointer;
+}
+
+.preguntas .preguntas__lista .preguntas__lista__item label {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.preguntas .preguntas__lista .preguntas__lista__item .preguntas__switch {
+    display: none;
+}
+
+.preguntas .preguntas__lista .preguntas__lista__item .preguntas__switch:checked+div {
+    display: block;
+}
+
+.preguntas .preguntas__lista .preguntas__lista__item div {
+    display: none;
+}
+
+.preguntas .preguntas__lista {
+    list-style-type: none;
+    padding: 50px;
+    margin: 0px;
+}
+
+.preguntas .preguntas__lista .preguntas__lista__item {
+    border: 1px solid rgb(50, 50, 50);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.footer span {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+@media (min-width: 530px) {
+    .banner__title {
+        font-size: 30px;
+    }
+    .form-login__title {
+        font-size: 30px;
+    }
+    #banner__form-login input {
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 770px) {
+    #banner__form-login {
+        width: 40%;
+        height: 320px;
+        left: 30%;
+        border-radius: 5px;
+    }
+    .main section {
+        margin: 0px 30px 30px 30px;
+    }
+    .preguntas__title {
+        font-size: 20px;
+    }
+    .preguntas__lista__item {
+        font-size: 16px;
+    }
+    .info__img{
+        width:40%;
+        margin: auto;
+    }
+    .info__title{
+        margin: auto;
+    }
+    .info__contenedor {
+        display: flex;
+    }
+}

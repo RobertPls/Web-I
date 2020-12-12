@@ -1,0 +1,128 @@
+.banner-content{
+    padding: 0% 0% 0% 0%;
+    position: relative;
+}
+
+.banner-content .banner-description{
+    padding: 20px;
+    color: white;
+    position: relative;
+    background-color: black;
+}
+
+
+.banner-description .baner-description__acceso-directo{
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.banner-description .banner-description__title{
+    font-size: 16px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.banner-description .banner-description__text{
+    font-size: 11px;
+}
+
+.banner-description .baner-description__acceso-directo:hover{
+    cursor: pointer;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+
+@media (min-width: 768px){
+    .banner-description .banner-description__title{
+        font-size: 18px;
+    }
+    
+    .banner-description .banner-description__text{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1024px){
+    .banner-content{
+        padding: 0% 15% 0% 15%;
+    }
+    .banner-content .banner-description{
+        margin-right: 15%;
+        position: absolute;
+        bottom: 0%;
+        opacity: 0.9;
+    }
+
+    .banner-description .banner-description__title{
+        font-size: 20px;
+    }
+    
+    .banner-description .banner-description__text{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.banner-content{
+    padding: 0% 15% 0% 15%;
+    position: relative;
+}
+
+.banner-content .banner-description{
+    margin-right: 15%;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+.banner-description .banner-description__form button{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.banner-description .banner-description__title{
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.banner-description .banner-description__text{
+    font-size: 15px;
+}
+
+.banner-description .banner-description__form button:hover{
+    cursor: pointer;
+}
+
+
+
+img{
+    width: 100%;
+}
+*/

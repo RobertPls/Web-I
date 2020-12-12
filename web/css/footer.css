@@ -1,0 +1,13 @@
+.footer {
+    height: 70px;
+    padding-top: 25px;
+    margin: 0px;
+    background-image: url("img/header_background.jpg");
+    display: flex;
+    justify-content: space-around;
+    color: #2095F2;
+}
+
+.footer span+span {
+    color: white;
+}

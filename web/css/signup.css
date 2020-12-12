@@ -1,0 +1,70 @@
+html, body {
+    height: 100vh;
+}
+
+body{
+    margin-top: -20px;
+}
+
+.header {
+    background-image: url("img/header_background.jpg");
+    background-repeat: repeat;
+    font-family: Ubuntu, sans-serif;
+}
+
+.header__logo {
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 35px;
+    color: #2095F2;
+    text-align: center;
+}
+
+.registrar__contenedor {
+    height: 100vh;
+    padding: 30px;
+}
+
+#form {
+    margin: auto;
+    text-align: center;
+    padding: 30px 35px;
+    width: 80%;
+    filter: opacity(80%);
+}
+
+#form input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#form input[type='submit'] {
+    border: none;
+    background-color: #2095F2;
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    background-color: rgb(30, 30, 30);
+}
+
+.main section {
+    background-color: black;
+    color: white;
+}
+
+@media(min-width: 768px) {
+    #form {
+        width: 70%;
+    }
+}
+@media(min-width: 1024px) {
+    #form {
+        width: 50%;
+    }
+}
