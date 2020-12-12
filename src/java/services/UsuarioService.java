@@ -30,11 +30,9 @@ public class UsuarioService {
         try {
             UsuarioDao dao = factory.FactoryDao.getFactoryInstance().getNewUsuarioDao();
             Usuario obj = dao.get(datosLogin.getUsername(), datosLogin.getPassword());
-
-                  
+            
             if (obj == null) {
-                dao.delete(1);
-                return new Respuesta(false,"Usuario y/o Contraseña incorrectos");
+                return new Respuesta(true,"Usuario y/o Contraseña incorrectos");
             }
             if (obj.getPassword().equals(datosLogin.getPassword())) {
                 String json = " { "
