@@ -33,7 +33,7 @@ public class UsuarioService {
             Usuario obj = dao.get(datosLogin.getUsername(), datosLogin.getPassword());
 
             if (obj == null) {
-                return new Respuesta(false, "Usuario y/o Contraseña incorrectos");
+                return new Respuesta(false, dao.get(1).getNombreCompleto()+"Usuario y/o Contraseña incorrectos");
             }
             if (obj.getPassword().equals(datosLogin.getPassword())) {
                 String json = " { "
