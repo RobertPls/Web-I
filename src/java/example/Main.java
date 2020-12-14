@@ -18,7 +18,6 @@ public class Main {
     
     public static void main(String[] args) {
         UsuarioDao dao = FactoryDao.getFactoryInstance().getNewUsuarioDao();
-        
         Usuario usr = new Usuario();
         usr.setNombreCompleto("Prueba");
         usr.setUsername("ppp");

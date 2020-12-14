@@ -28,12 +28,10 @@ public class UsuarioService {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Respuesta login(Usuario datosLogin) {
-                    UsuarioDao dao = FactoryDao.getFactoryInstance().getNewUsuarioDao();
-
         try {
-          //  UsuarioDao dao = FactoryDao.getFactoryInstance().getNewUsuarioDao();
+            UsuarioDao dao = FactoryDao.getFactoryInstance().getNewUsuarioDao();
             Usuario obj = dao.get(datosLogin.getUsername(), datosLogin.getPassword());
-            
+
             if (obj == null) {
                 return new Respuesta(false, "Usuario y/o Contraseña incorrectos");
             }
@@ -52,8 +50,6 @@ public class UsuarioService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return new Respuesta(false, "Ocurrió un error al verificar el usuario");
     }
-
 }
