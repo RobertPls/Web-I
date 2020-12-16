@@ -5,10 +5,9 @@
  */
 package services;
 
-import dal.Conexion;
 import dao.UsuarioDao;
+import dao.UsuarioDaoMySQL;
 import dto.Usuario;
-import factory.FactoryDao;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -29,11 +28,11 @@ public class UsuarioService {
     @Produces(MediaType.APPLICATION_JSON)
     public Respuesta login(Usuario datosLogin) {
         try {
-            UsuarioDao dao = FactoryDao.getFactoryInstance().getNewUsuarioDao();
-            Usuario obj = dao.get(datosLogin.getUsername(), datosLogin.getPassword());
-
+            UsuarioDao dao = new UsuarioDaoMySQL();
+            Usuario obj = dao.get(datosLogin.getUsername(),datosLogin.getPassword());
+            
             if (obj == null) {
-                return new Respuesta(false, dao.get(1).getNombreCompleto()+"Usuario y/o Contraseña incorrectos");
+                return new Respuesta(true,"Usuario y/o Contraseña incorrectos");
             }
             if (obj.getPassword().equals(datosLogin.getPassword())) {
                 String json = " { "
@@ -44,7 +43,7 @@ public class UsuarioService {
 
                 return new Respuesta(true, json);
             } else {
-                return new Respuesta(false, "Nombre de Usuario y/o Contraseña incorrectos");
+                return new Respuesta(false, "Usuario y/o Contraseña incorrectos");
             }
 
         } catch (Exception e) {
