@@ -7,22 +7,20 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style_index.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style_serie.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/serie.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
 </head>
 
 <body>
-    <script src="js/movie.js"></script>
-
+    <script src="js/serie.js"></script>
     <div id="content">
         <header class="main-header">
-            <h1 class="main-header__logo">VIDEOPLAY</i>
+            <h1 class="main-header__logo">VIDEOPLAY
             </h1>
             <form action="#" id="main-header__search">
                 <input type="text" placeholder="Buscar">
@@ -40,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="serie.html">
                             <i class="fas fa-video"></i><span>Series</span>
                         </a>
                     </li>
@@ -48,29 +46,41 @@
                 </ul>
             </nav>
         </header>
-        <section class="banner">
-            <div class="banner-content">
-                <div class="banner__img">
-                    <img src="img/parasite.jpg" alt="Banner">
-                </div>
-                <div class="banner-description">
-                    <h2 class="banner-description__title">Parasite</h2>
-                    <p class="banner-description__text">
-                        Uno a uno, los astutos miembros de una familia sin recursos comienzan a desempeñarse como
-                        personal
-                        domestico en la casa de una adinerada y privilegiada familia.
-                    </p>
-                    <a class="baner-description__acceso-directo" href="#">
-                        <i class="far fa-play-circle"></i> <span>Ver</span>
-                    </a>
-                </div>
-            </div>
-        </section>
         <main>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lAqiHTwcXOY" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div class="video__play">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UuhqbcMNrME" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <h1 class="video__titulo">WandaVision</h1>
+                <div class="video__descripcion">Ambientada después de los eventos de Avengers: Endgame, Wanda Maximoff y
+                    Vision están viviendo la vida suburbana ideal en la ciudad de Westview, tratando de ocultar sus
+                    poderes.</div>
+
+                <nav class="video__selector">
+                    <label for="temporada-switch" class="selector-label">
+                        <span>Temporada</span>
+                    </label>
+                    <input type="checkbox" Onclick="chck();" id="temporada-switch" class="selector__switch">
+                    <label for="episodio-switch" class="selector-label">
+                        <span>Episodio</span>
+                    </label>
+                    <input type="checkbox" Onclick="chck();" id="episodio-switch" class="selector__switch">
+                    <div class="video__lista__contenedor">
+                        <ul id="temporada__lista" class="video__lista">
+                            <li class="temporada__lista__item">Temporada 1</li>
+                            <li class="temporada__lista__item">Temporada 2</li>
+                            <li class="temporada__lista__item">Temporada 3</li>
+                        </ul>
+
+                        <ul id="episodio__lista" class="video__lista">
+                            <li class="episodio__lista__item">Episodio 1</li>
+                            <li class="episodio__lista__item">Episodio 2</li>
+                            <li class="episocio__lista__item">Episodio 3</li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </main>
         <footer class="footer">

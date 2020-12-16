@@ -1,3 +1,102 @@
-.video{
+.content {
+    height: 100vh;
+}
+
+main {
+    padding: 20px 0px;
+    background-color: rgb(30, 30, 30);
+}
+
+.video {
+    padding: 20px;
+    background-color: black;
     margin: auto;
+    color: white;
+}
+
+.video__play{
+    width: 100%;
+    height: 200px;
+}
+
+.video__descripcion{
+    margin-bottom: 20px;
+}
+
+.selector-label {
+    display: block;
+    border-bottom:1px  solid #2095F2;
+}
+
+.video__lista__contenedor {
+    padding: 10px 50px;
+    margin: 20px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 10px;
+}
+
+.video__selector .video__lista {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: circle;
+}
+
+.selector__switch {
+    display: none;
+}
+
+.video__lista {
+    display: none;
+}
+
+#temporada-switch:checked~.video__lista__contenedor>#temporada__lista {
+    display: block;
+}
+
+#episodio-switch:checked~.video__lista__contenedor>#episodio__lista {
+    display: block;
+}
+
+.selector-label {
+    color: white;
+    text-align: center;
+    padding: 10px 14% 10px 14%;
+}
+
+.selector-label:hover {
+    background-color: #2095F2;
+}
+
+.selector-label:hover {
+    cursor: pointer;
+}
+.temporada__lista__item, .episodio__lista__item{
+    cursor: pointer;
+}
+
+
+@media (min-width: 760px) {
+    .video{
+        padding: 50px;
+    }
+    .selector-label{
+        display: inline-block;
+        width: 49.5%;
+    }
+    .video__play{
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video{
+        font-size: 20px;
+    }
+    .selector-label{
+        width: 20%;
+        padding: 10px 30px;
+    }
+    .video__play{
+        height: 600px;
+    }
 }

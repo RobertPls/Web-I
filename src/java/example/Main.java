@@ -6,9 +6,13 @@
 
 package example;
 
+import dal.Conexion;
 import dao.UsuarioDao;
+import dao.UsuarioDaoMySQL;
 import dto.Usuario;
 import factory.FactoryDao;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -16,8 +20,9 @@ import factory.FactoryDao;
  */
 public class Main {
     
-    public static void main(String[] args) {
-        UsuarioDao dao = FactoryDao.getFactoryInstance().getNewUsuarioDao();
+    public static void main(String[] args) throws SQLException {
+        UsuarioDao dao = new UsuarioDaoMySQL();
+    /*    
         Usuario usr = new Usuario();
         usr.setNombreCompleto("Prueba");
         usr.setUsername("ppp");
@@ -25,13 +30,10 @@ public class Main {
         usr.setTipoUsuario("CLIENTE");
         
         try {
-            dao.insert(usr);
+           // dao.insert(usr);
+            System.out.println(dao.get(1).getPassword());
         } catch (Exception ex) {
             ex.printStackTrace();
-        }
-        
-        
-        
+        }*/
     }
-    
 }
