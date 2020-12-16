@@ -22,7 +22,7 @@ body{
 }
 
 .registrar__contenedor {
-    height: 100vh;
+    height: 120vh;
     padding: 30px;
 }
 
@@ -48,7 +48,9 @@ body{
     color: white;
     cursor: pointer;
 }
-
+.msg{
+    color: red;
+}
 .main {
     background-color: rgb(30, 30, 30);
 }

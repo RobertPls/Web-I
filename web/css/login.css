@@ -163,6 +163,7 @@ a:hover {
 
 .preguntas .preguntas__lista .preguntas__lista__item {
     border: 1px solid rgb(50, 50, 50);
+    border-radius: 10px;
     margin-bottom: 15px;
     padding: 20px;
 }
